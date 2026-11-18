@@ -2,32 +2,44 @@
 
 <h1 align="center">Bandmate</h1>
 
-<p align="center"><b>A free Android app for the Galaxy Fit 3: watch faces you send from your phone, and a coach that turns your watch's data into a plan for the day.</b></p>
+<p align="center"><b>My Galaxy Fit 3 tracked everything but never told me what it meant. Bandmate turns its data into a daily plan and a progress report, with food, lifts, an AI coach and watch faces in one free app.</b></p>
 
 <p align="center"><a href="../../releases/latest"><b>⬇ Download the latest version</b></a></p>
 
 <p align="center">
-  <img src="screenshots/today.png" width="200" alt="Today">
-  <img src="screenshots/faces.png" width="200" alt="Faces">
-  <img src="screenshots/workout.png" width="200" alt="Workout">
+  <img src="screenshots/today.png" width="200" alt="Today's plan">
+  <img src="screenshots/progress-calories.png" width="200" alt="Calories in and out">
+  <img src="screenshots/lifts-sets.png" width="200" alt="Sets and weights for a session">
 </p>
 
-## What it does
+## Why I built it
+
+| The problem | What Bandmate does |
+|---|---|
+| **"Is my body actually changing?"** Samsung Health records everything but never says where you're heading. | Reads your weight trend, waist and a body-fat estimate, food, lifts and sleep together, and gives one verdict on where you're heading. |
+| **"Should I push today or back off?"** The Fit 3 has no heart-rate variability, so there's no recovery or strain score. | Estimates both from last night's sleep, your sleeping heart rate against your normal, and how hard yesterday was. Each morning: train hard, as normal, or keep it light. A rough read, and it says so, but better than nothing. |
+| **"I log food in Gemini, then copy the numbers somewhere else."** | Photo or voice in; protein and calories logged next to your training. Meals can go on earlier days, and a mess menu sent once gets you suggestions. |
+| **"My sets and weights are in a notes app."** | Every workout from the watch, with its sets and weights attached, and your best lifts tracked in Progress. Workouts the Health app skipped come in from one screenshot. |
+| **"I screenshot Samsung Health just to ask an AI how I'm doing."** | The coach already has your sleep, heart rate, workouts, meals and lifts. Ask by text or voice; say what you ate or trained and it logs it. Runs on a free Gemini key, about 2,000 tokens a question. |
+| **"My watch faces are scattered across folders and a PC."** | Face packs live in the app and go to the band from the phone. |
+| **"Am I in a deficit? Hitting protein? Sleeping enough?"** | Charts over 7, 14 or 30 days: calories in and out, protein, weight, effort, sleep and heart rate. |
+
+<p align="center">
+  <img src="screenshots/progress-enough.png" width="200" alt="Each day's effort against what your body could take">
+  <img src="screenshots/food-add.png" width="200" alt="Logging a meal">
+  <img src="screenshots/ask-answer.png" width="200" alt="The coach answering from your numbers">
+</p>
+
+## The tabs
 
 | Tab | What it's for |
 |---|---|
-| **Today** | A plan in three lines: how hard to train, how much protein and how many calories are left, and when to go to bed. Sleep stages, heart rate and effort are there if you want the detail. |
-| **Food** | Take a photo or say what you ate; the AI works out protein and calories, cooking oil included. Meals can go on earlier days too. |
-| **Workout** | Every session from your watch, with effort from your heart rate. Tap one to log weights and reps. Sessions the Health app didn't pass on can be added from a screenshot of its workout list. |
-| **Faces** | Packs of watch faces, sent to the band straight from the phone. |
-| **Progress** | Where your body is heading, from weight, waist, lifts and food, with a guide showing exactly where to measure. |
-| **Ask** | Talk or type to the coach. Tell it what you ate or trained and it goes into your log, with an Undo. |
-
-<p align="center">
-  <img src="screenshots/food-add.png" width="200" alt="Logging a meal">
-  <img src="screenshots/ask-logged.png" width="200" alt="The coach logging workouts">
-  <img src="screenshots/measure.png" width="200" alt="The measuring guide">
-</p>
+| **Today** | How hard to train, how much protein and how many calories are left, and when to go to bed. |
+| **Food** | Meals by photo, voice or a few words. |
+| **Workout** | Every session, with effort from heart rate, and its sets and weights. |
+| **Faces** | Your face packs, sent to the band. Digital Classic (11 faces) and Dot Theme (5) come with the app. |
+| **Progress** | Where your body is heading, and the charts behind it. |
+| **Ask** | The coach, by text or voice. |
 
 ## Install
 
@@ -53,21 +65,20 @@ Then a short tour shows what each tab is for. Settings has **Setup and tour** to
 
 ## Watch faces
 
-Two packs come with the app: **Digital Classic** (11 faces) and **Dot Theme** (5). Any other pack is a `.f3pack` file: open it with Bandmate, or tap **+** in Faces, and it's added.
+Any pack is a `.f3pack` file: open it with Bandmate, or tap **+** in Faces, and it's added.
 
 **Good to know:**
 - Each face in a pack is built on top of one of the watch's original faces, and Bandmate needs that original face on your phone once. For now the way to get one is [FitFace Studio](https://github.com/satvikgosai/fitface-studio) (free): download the face there, export it, and open the export with Bandmate. A face that says "Needs the original face" is waiting for this.
 - Sending takes one extra step each time: switch the Fit3 Plugin's Nearby devices off for a minute so Bandmate can reach the band, then back on. The app tells you when.
 - Faces numbered 201 to 250 install beside your other faces. The rest replace the original face they're built on.
 
-## Privacy
+## What it asks permission for
 
-- What you enter (meals, lifts, weight, chat) stays on your phone. No accounts, no ads, no analytics.
-- **Health Connect:** read only (heart rate, sleep, workouts, steps, distance, calories, blood oxygen, weight). Nothing is written back.
-- **Nearby devices:** only to send faces to the band.
+- **Health Connect:** to read heart rate, sleep, workouts, steps, distance, calories, blood oxygen and weight. It never writes anything back.
+- **Nearby devices:** to send faces to the band.
 - **Microphone:** only while you tap the mic to talk.
 - **Camera and photos:** only the photos you pick.
-- **AI coach:** a short summary of your recent days goes to Google's Gemini only when you use it, through your own key. On Google's free tier, Google may use what you send to improve its products.
+- **AI coach:** when you use it, a short summary of your recent days goes to Google's Gemini through your own key. On Google's free tier, Google may use what you send to improve its products.
 
 ## Support
 

@@ -2,6 +2,11 @@
 
 Bandmate uses MAJOR.MINOR.PATCH version numbers: PATCH for bug fixes, MINOR for new features, MAJOR when something has to be set up again.
 
+## 1.0.1
+
+- **Today warns you when your watch isn't syncing.** Sending a face means switching the Fit3 Plugin's Nearby devices off for a minute. If it's left off, the watch stops syncing and nothing new reaches the app. Today now says so, with a button to the plugin's settings, until it's back on.
+- **The face page no longer gives the same advice twice** when the watch can't be found because the plugin's Nearby devices is off.
+
 ## 1.0.0 (first public release)
 
 **Today**
